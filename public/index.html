@@ -3,24 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Figtree"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#timeline").load("timeline.html");
+      });
+    </script>
   </head>
   <body>
-    <h1>Hi, my name is Ikaika</h1>
-    <nav class="pages-container">
-      <a href="#"><strong>Home</strong></a>
-      <a href="./about.html">About</a>
-      <a href="./projects.html">Projects</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
+    <title>Ikaika Lee</title>
+    <div id="intro" class="intro-message">
+      <h1>Hi, I'm Ikaika</h1>
+      <p>
+        I like <a href="#projects">coding</a> and
+        <a href="./cats.html">cats</a>
+      </p>
+    </div>
+    <div id="projects">
+      <h1>Projects</h1>
+      <div id="individual" class="individual-project-section">
+        <a href="https://github.com/IkaikaL/ink-paradise"
+          ><h3>Ink Paradise</h3></a
+        >
+        <div id="technologies">
+          <h5>React</h5>
+          <h5>TypeScript</h5>
+          <h5>Vite</h5>
+          <h5>Material UI</h5>
+        </div>
+        <p>
+          A modern take to the issues of online manga reading using the MangaDex
+          API
+        </p>
+      </div>
+      <div class="individual-project-section">
+        <a href="https://github.com/IkaikaL/ink-paradise-backend">
+          <h3>Ink Paradise Backend</h3></a
+        >
+        <div id="technologies">
+          <h5>Java</h5>
+          <h5>Spring Boot</h5>
+          <h5>MariaDB</h5>
+        </div>
+        <p>
+          A backend for Ink Paradise that handles database integration and API
+          calls
+        </p>
+      </div>
+      <div class="individual-project-section">
+        <a href="https://github.com/IkaikaL/Food-Basket">
+          <h3>Food Basket</h3></a
+        >
+        <div id="technologies">
+          <h5>Dart</h5>
+          <h5>Flutter</h5>
+          <h5>SQFlite</h5>
+        </div>
+        <p>
+          A mobile app written in Dart using Flutter to quickly scan produce
+          items compiling a list of raw ingredients that can then be used to
+          generate recipes stored in the database
+        </p>
+      </div>
+      <div class="individual-project-section">
+        <a href="https://github.com/IkaikaL/automating-preprocessing">
+          <h3>Automating Preprocessing</h3></a
+        >
+        <div id="technologies">
+          <h5>Matlab</h5>
+        </div>
+        <p>
+          A matlab program written to dynamically extract the grayscale values
+          necessary to process the images of a soil sample to better visualize
+          the root makeup of the sample determining sheer strength
+        </p>
+      </div>
 
-    <main>
-      <p>Welcome to my portfolio website</p>
-    </main>
+      <div class="individual-project-section">
+        <a href="https://github.com/IkaikaL/pythonGUI"> <h3>Python GUI</h3></a>
+        <div id="technologies">
+          <h5>Python</h5>
+        </div>
+        <p>
+          A Python program that utilizes a GUI to better allow Environmental and
+          Civil Engineers to process sample images without needing to know the
+          inner workings of the program
+        </p>
+      </div>
+
+      <div class="individual-project-section">
+        <a href="https://github.com/IkaikaL/CSC-3380-Teehm-Sicks-Repository">
+          <h3>Meal Planning Website</h3></a
+        >
+        <div id="technologies">
+          <h5>Python</h5>
+          <h5>Django</h5>
+          <h5>HTML</h5>
+        </div>
+        <p>
+          A website written to allow the user to better plan out their meals
+          with a system to auto recommend recipes based on their ingredients
+        </p>
+      </div>
+    </div>
+    <div id="skills" class="skills-section">
+      <h1>Skills</h1>
+      <div class="skills-list">
+        <h5>JavaScript</h5>
+        <h5>TypeScript</h5>
+        <h5>React</h5>
+        <h5>jQuery</h5>
+        <h5>React Native</h5>
+        <h5>Node.js</h5>
+        <h5>HTML</h5>
+        <h5>CSS</h5>
+        <h5>Java</h5>
+        <h5>Spring Boot</h5>
+        <h5>Linux</h5>
+        <h5>Git</h5>
+        <h5>SQL</h5>
+        <h5>Python</h5>
+        <h5>C#</h5>
+        <h5>.NET</h5>
+      </div>
+    </div>
+    <div id="experience" class="experience-section">
+      <h1>Experience</h1>
+      <div id="timeline"></div>
+    </div>
+    <div>
+      <a href="./assets/IkaikaLeeResume.pdf" class="resume-link"
+        ><h4>Resume</h4></a
+      >
+    </div>
   </body>
 </html>
