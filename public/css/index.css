@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: #121212;
+  font-family: "Figtree";
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.intro-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+#intro h1 {
+  font-size: 60px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#intro p {
+  font-size: 25px;
+}
+
+a {
+  color: #ff7597;
+  text-decoration: none;
+}
+
+#projects,
+#skills,
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+
+#projects h1,
+#skills h1,
+#experience h1 {
+  font-size: 60px;
+}
+
+#projects h3 {
+  font-size: 30px;
+}
+
+#technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#technologies h5 {
+  background-color: #212121;
+  border-radius: 10px;
+  margin: 0px 10px 0px 0px;
+  padding: 10px;
+}
+.individual-project-section {
+  width: 70dvw;
+}
+
+#skills h5 {
+  background-color: #212121;
+  border-radius: 10px;
+  margin: 0px 10px 10px 0px;
+  padding: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 80dvw;
+  flex-wrap: wrap;
+}
+
+.resume-link {
+  text-align: center;
+}
