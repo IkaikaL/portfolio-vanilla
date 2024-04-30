@@ -57,14 +57,14 @@ a {
   font-size: 30px;
 }
 
-#technologies {
+.technologies {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-#technologies h5 {
+.technologies h5 {
   background-color: #212121;
   border-radius: 10px;
   margin: 0px 10px 0px 0px;
